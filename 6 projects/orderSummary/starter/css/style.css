@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Red Hat Display', sans-serif; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7ff;
+  height: 100vh; }
+  .container__box {
+    width: 35rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 2; }
+  .container__image {
+    width: 35rem;
+    height: 17rem;
+    border-radius: 1rem 1rem 0 0; }
+  .container__about {
+    padding: 3rem; }
+  .container__typo {
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .container__typo-header {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #1f2f56; }
+    .container__typo-text {
+      margin-top: 1rem;
+      color: #7280a7;
+      font-size: 1.6rem; }
+  .container__plan {
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    background-color: #f5f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .container__plan-text {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .container__plan-icon {
+      width: 5rem;
+      height: 5rem;
+      background-color: #e0e8ff;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: 1.5rem; }
+    .container__plan-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #1f2f56; }
+    .container__plan-price {
+      font-size: 1.6rem;
+      color: #7280a7;
+      font-weight: 500; }
+    .container__plan-change {
+      font-size: 1.5rem;
+      font-weight: 700; }
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+  border-radius: 1rem; }
+  .btn--blue {
+    margin-top: 3rem;
+    background-color: #3829e0;
+    color: #fff;
+    box-shadow: 1px 10px  10px #cfd8ff; }
+  .btn--grey {
+    margin-top: 2rem;
+    color: #7280a7; }
+
+.background {
+  height: 50vh;
+  width: 100%;
+  fill: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }

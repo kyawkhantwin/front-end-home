@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body{
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+  @include respond(tab-land) { // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) { // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+.container{
+  width: 100vw;
+  display: grid;
+  overflow: hidden;
+  //grid-template-columns:[menu-start]40rem [about-start] 45rem [menu-end ]16rem[about-end photo-start] 1fr [photo-end] ;
+  grid-template-columns:[menu-start]30vw [about-start] 30vw [menu-end arrow-start] 5vw[about-end photo-start] 5vw[arrow-end] 30vw [photo-end] ;
+  grid-template-rows: 60vh 10vh 30vh;
+
+  @include respond(tab-land) {
+    grid-template-rows: 50vh 10vh 40vh;
+  }
+  @include respond(phone) {
+    grid-template-columns: 4vw 92vw 2vw 2vw ;
+    grid-template-rows: 50vh repeat(2,40vh) repeat(2,30vh) ;
+  }
+
+
+}

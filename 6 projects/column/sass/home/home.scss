@@ -1,0 +1,20 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 100vh;
+  background-color: $color-primary;
+
+  &__box{
+    width: 25rem;
+
+    padding: 3rem;
+  }
+
+  &__icons{
+    width: 8rem;
+    height: 4rem;
+  }
+
+}

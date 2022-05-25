@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  //@include respond(phone){
+  //  flex-direction: row;
+  //}
+}
+
+

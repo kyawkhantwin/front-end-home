@@ -1,0 +1,73 @@
+.container{
+  height: 100vh;
+ background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__box{
+    width: 37rem;
+    height: 45rem;
+    background-color: $bg-color-primary;
+    padding: 5rem ;
+    border-radius: 2rem;
+
+    a{
+      overflow: hidden;
+    }
+  }
+  &__icon{
+    margin-top: -1rem ;
+  }
+  .star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-orange;
+  }
+
+  &__circles{
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+   background-color: $bg-color-secondary;
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    animation: moveInBottom 0.5s ease-in;
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__text{
+    &-box{
+      margin-top: 1rem;
+
+    }
+    &-header{
+      font-size: $font-big;
+      color: $text-color-primary;
+      animation: moveInLeft 0.7s ease-in;
+    }
+    &-text{
+      margin-top: 1rem;
+      color: $text-color-secondary;
+      animation: moveInRight 0.9s  ease-in;
+
+
+    }
+  }
+  &__circles-box{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+  }
+
+
+
+}

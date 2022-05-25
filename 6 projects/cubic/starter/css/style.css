@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Outfit', sans-serif; }
+
+.mg-top-2 {
+  margin-top: 2rem; }
+
+.mg-top-1 {
+  margin-top: 1.5rem; }
+
+.text-grey {
+  color: #8bacda; }
+
+.text-cyan {
+  color: #00fff7; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d192b;
+  height: 100vh; }
+  .container__box {
+    padding: 2rem;
+    width: 25rem;
+    background-color: #14253d;
+    border-radius: 1rem; }
+  .container__gallery {
+    width: 25rem;
+    height: 25rem;
+    z-index: 10;
+    position: relative; }
+    .container__gallery:hover .container__view,
+    .container__gallery:active .container__view {
+      opacity: 1; }
+    .container__gallery:hover .overlay,
+    .container__gallery:active .overlay {
+      opacity: 0.5; }
+  .container__view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -10%); }
+  .container__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: 1; }
+  .container__extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+  .container__feature {
+    display: flex; }
+    .container__feature p {
+      font-size: 1.2rem;
+      font-weight: 700; }
+  .container__icon {
+    width: 2rem;
+    height: 2rem; }
+  .container__creator {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #8bacda;
+    padding-top: 2rem; }
+    .container__creator p {
+      font-size: 1.2rem;
+      color: #8bacda; }
+      .container__creator p span {
+        color: white; }
+  .container__person {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border: 1px solid white; }
+
+.header {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600; }
+
+.text {
+  font-size: 1.6rem;
+  color: #8bacda;
+  font-weight: 300; }
+
+.hidden {
+  opacity: 0; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #00fff7;
+  position: absolute;
+  border-radius: 1rem; }

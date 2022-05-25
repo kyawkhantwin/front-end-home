@@ -1,0 +1,26 @@
+.container{
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+  &__box{
+    width: 26rem;
+
+    background-color: $bg-color-secondary;
+    padding: 1rem;
+    border-radius: 1rem;
+
+  }
+  &__bg{
+    width: 24rem;
+  }
+
+  &__photo{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+}

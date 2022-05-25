@@ -1,0 +1,78 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $color-darkcyan;
+
+  &__box{
+    background-color: $color-white;
+    border-radius: 1rem;
+
+
+  }
+  &__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__background{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 30rem;
+  }
+
+  &__user{
+
+    &-photo{
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-top: -5rem;
+      margin-left: 3rem;
+    }
+
+  }
+
+  &__detail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+    border-top: 1px solid $color-darkcyan;
+
+    &-number{
+      color: $color-darkblue;
+    }
+    &-text{
+      font-size: $font-size-smallest;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      color: $color-darkblue;
+    }
+  }
+}
+
+.user{
+  &__name {
+    color: $color-darkblue;
+    margin-top: 1rem;
+    font-size: $font-size;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__location{
+    text-align: center;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    color: $color-darkblue;
+  }
+}

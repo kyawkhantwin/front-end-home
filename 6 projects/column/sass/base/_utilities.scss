@@ -1,0 +1,21 @@
+.bg-orange{background-color: $bg-color-orange};
+.bg-cyan{background-color: $bg-color-cyan}
+.bg-darkcyan{background-color: $bg-color-darkcyan}
+
+.text-orange{color: $bg-color-orange};
+.text-cyan{color: $bg-color-cyan}
+.text-darkcyan{color: $bg-color-darkcyan}
+
+.mg-bottom-small{margin-bottom:2.5rem; }
+.mg-bottom-big{margin-bottom: 4rem}
+.mg-bottom-biggest{margin-bottom: 8rem}
+
+.border-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.border-right{
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

@@ -1,0 +1,13 @@
+.active{
+  display: block !important;
+}
+
+.active--small{
+  opacity: 0.5;
+  border: 4px solid $color-orange;
+}
+
+.hidden{
+  opacity: 0;
+}
+

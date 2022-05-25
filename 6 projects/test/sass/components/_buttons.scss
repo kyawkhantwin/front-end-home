@@ -1,0 +1,39 @@
+.btn{
+  border: none;
+  border-radius: 2rem;
+  font-size: $font-sm;
+  color: $text-color-primary;
+  animation: moveInTop 0.9s ease-in;
+  padding:1rem 11rem ;
+  background-color: $color-orange;
+  cursor: pointer;
+  text-decoration: none;
+
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: white ;
+    border-radius: 2rem;
+
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.5s;
+  }
+
+    &:hover::before{
+     transform: translateX(100%) rotate(45deg);
+    }
+  }
+
+
+
+
+

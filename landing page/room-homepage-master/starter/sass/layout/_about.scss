@@ -1,0 +1,40 @@
+.about{
+  grid-column: about-start / about-end;
+  grid-row: 3/4;
+
+  display: grid;
+  grid-template-rows: 5vh 5vh 20vh 5vh;
+  grid-template-columns:3vw 1fr 3vw;
+
+
+
+  //@include respond(tab-land) {
+  //  grid-template-rows: 1vh 4vh 35vh;
+  //}
+
+  @include respond(phone) {
+
+    grid-template-rows: 5vh 5vh 10vh;
+    grid-template-columns:3vw 1fr 3vw;
+
+    grid-column: 2/3 ;
+    grid-row: 4/5;
+  }
+
+  &__header{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 700;
+    color: $color-black;
+    text-transform: uppercase;
+
+    @include respond(phone) {
+      letter-spacing: 7px;
+    }
+  }
+
+  &__text{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}

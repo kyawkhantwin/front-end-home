@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header__nav">
+            <svg class="header__nav-logo mg-right-biggest">
+                <use xlink:href="images/logo.svg#icon"></use>
+            </svg>
+
+            <ul class="header__nav-box">
+                <li><a href="#" class="header__nav-links">Collections</a></li>
+                <li><a href="#" class="header__nav-links">Men</a></li>
+                <li><a href="#" class="header__nav-links">Women</a></li>
+                <li><a href="#" class="header__nav-links">About</a></li>
+                <li><a href="#" class="header__nav-links">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header__features">
+            <div class="click">
+                <svg class="header__features-shopping">
+                    <use xlink:href="images/icon-cart.svg#icon"></use>
+                </svg>
+            </div>
+            <img src="images/image-avatar.png" alt="user" class="header__features-user">
+        </div>
+    </div>
+
+    <main class="features">
+        <div class="cart hidden">
+            <h5>cart</h5>
+
+            <div class="cart__container">
+                <p>Your cart is empty</p>
+            </div>
+
+        </div>
+        <div class="features__images">
+            <div class="features__image-container">
+
+                <img src="images/icon-next.svg#icon" alt="" class="phone phone--next">
+                <img src="images/icon-previous.svg#icon" alt="" class="phone phone--previous">
+                <img class="features__images-main active"  src="images/image-product-1.jpg" alt="main">
+                <img class="features__images-main"  src="images/image-product-2.jpg" alt="main">
+                <img class="features__images-main"  src="images/image-product-3.jpg" alt="main">
+                <img class="features__images-main"  src="images/image-product-4.jpg" alt="main">
+            </div>
+
+            <div class="features__images-box">
+                <img src="images/image-product-1-thumbnail.jpg" alt="1" class="features__images-small active--small">
+                <img src="images/image-product-2-thumbnail.jpg" alt="2" class="features__images-small">
+                <img src="images/image-product-3-thumbnail.jpg" alt="3" class="features__images-small">
+                <img src="images/image-product-4-thumbnail.jpg" alt="4" class="features__images-small">
+            </div>
+        </div>
+
+        <div class="features__about">
+            <div class="features__about-detail">
+                <p class="features__about-company">Sneaker Company</p>
+                <h2 class="features__about-name">Fall Limited Edition Sneakers</h2>
+                <p class="features__about-text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="features__about-rate">
+                    <div class="features__about-box">
+                        <h3 class="features__about-price">$125.00</h3>
+                        <p class="features__about-discount">50%</p>
+                    </div>
+                    <p class="features__about-origin">$250.00</p>
+                </div>
+            </div>
+
+            <div class="features__about-buttons">
+                <div class="features__about-click">
+                    <svg class=" features__about-click--plus">
+                        <use  xlink:href="images/icon-plus.svg#icon"></use>
+                    </svg>
+                    <p class="quantity">0</p>
+                    <svg class=" features__about-click--minus">
+                        <use  xlink:href="images/icon-minus.svg#icon"></use>
+                    </svg>
+                </div>
+                <div class="features__about-cart">
+                    <svg class="features__about-icon">
+                        <use xlink:href="images/icon-cart.svg#icon"></use>
+                    </svg>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+    <div class="popup">
+    <div class="overlay"></div>
+    <div class="images">
+        <img class="images__main active"  src="images/image-product-1.jpg" alt="main">
+        <img class="images__main"  src="images/image-product-2.jpg" alt="main">
+        <img class="images__main"  src="images/image-product-3.jpg" alt="main">
+        <img class="images__main"  src="images/image-product-4.jpg" alt="main">
+    </div>
+
+    <svg class="popup__icon popup__icon-next">
+        <use xlink:href="images/icon-next.svg#icon"></use>
+    </svg>
+
+    <svg class="popup__icon popup__icon-previous">
+        <use xlink:href="images/icon-previous.svg#icon"></use>
+    </svg>
+
+    <svg class="popup__icon popup__icon-close">
+        <use xlink:href="images/icon-close.svg#icon"></use>
+    </svg>
+</div>
+
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
